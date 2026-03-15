@@ -2,6 +2,7 @@ package ma.fst.studentapi.entity;
 
 import jakarta.persistence.*;
 
+//Pas de @Data, car lombok n'est pas utilisé
 @Entity
 @Table(name = "students")
 public class Student {
@@ -37,6 +38,7 @@ public class Student {
         this.age = age;
     }
 
+    // Faut des getters & setters dans ce cas, car Lombok est absent
     public Long getId() {
         return id;
     }
