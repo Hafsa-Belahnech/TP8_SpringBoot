@@ -4,22 +4,22 @@ import jakarta.validation.constraints.*;
 
 public record StudentRequestDTO(
 
-        @NotBlank(message = "Le prénom est obligatoire")
+        @NotBlank(message = "Le prénom est obligatoire!!")
         String firstName,
 
-        @NotBlank(message = "Le nom est obligatoire")
+        @NotBlank(message = "Le nom est obligatoire!!")
         String lastName,
 
-        @NotBlank(message = "L'email est obligatoire")
-        @Email(message = "Format d'email invalide")
+        @NotBlank(message = "L'email est obligatoire!!")
+        @Email(message = "Format d'email invalide!!")
         String email,
 
-        @NotBlank(message = "La filière est obligatoire")
+        @NotBlank(message = "La filière est obligatoire!!")
         String major,
 
-        @NotNull(message = "L'âge est obligatoire")
-        @Min(value = 17, message = "L'âge minimal est 17")
-        @Max(value = 100, message = "L'âge maximal est 100")
+        @NotNull(message = "L'âge est obligatoire!!")
+        @Min(value = 18, message = "L'âge minimal est 18")
+        @Max(value = 90, message = "L'âge maximal est 90")
         Integer age
 ) {
 }
